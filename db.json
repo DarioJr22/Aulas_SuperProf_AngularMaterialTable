@@ -1,0 +1,82 @@
+{
+
+   "products":[
+     {
+      "id": "333",
+      "name": "Product: 946120",
+      "description": "Description: 1740",
+      "price": "3576.55",
+      "category": "Categoria: N",
+      "sales": "3646.46"
+    },
+    {
+      "id": "304",
+      "name": "Product: 555795",
+      "description": "Description: 7188",
+      "price": "403.64",
+      "category": "Categoria: S",
+      "sales": "9867.80"
+    },
+
+    {
+      "id": "127",
+      "name": "Product: 008461",
+      "description": "Description: 0450",
+      "price": "3440.31",
+      "category": "Categoria: N",
+      "sales": "3721.04"
+    },
+    {
+      "id": "225",
+      "name": "Product: 041277",
+      "description": "Description: 9264",
+      "price": "1000.17",
+      "category": "Categoria: N",
+      "sales": "1406.96"
+    },
+    {
+      "id": "227",
+      "name": "Product: 298918",
+      "description": "Description: 3161",
+      "price": "6711.51",
+      "category": "Categoria: N",
+      "sales": "2941.08"
+    },
+    {
+      "id": "840",
+      "name": "Product: 518898",
+      "description": "Description: 0661",
+      "price": "157.78",
+      "category": "Categoria: S",
+      "sales": "8281.27"
+    },
+
+    {
+
+      "id": "245",
+      "name": "Product: 696314",
+      "description": "Description: 6925",
+      "price": "9210.55",
+      "category": "Categoria: N",
+      "sales": "3320.86"
+    },
+    {
+      "id": "755",
+      "name": "Product: 453832",
+      "description": "Description: 6817",
+      "price": "6619.57",
+      "category": "Categoria: N",
+      "sales": "3828.89"
+    },
+    {
+      "id": "984",
+      "name": "Product: 091708",
+      "description": "Description: 8679",
+      "price": "7661.17",
+      "category": "Categoria: S",
+      "sales": "4944.44"
+    }
+
+   ]
+
+  }

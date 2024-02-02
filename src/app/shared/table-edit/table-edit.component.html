@@ -1,0 +1,53 @@
+<div class="tableWrapper">
+<span class="controlsWapper">
+  <button mat-raised-button color="primary" (click)="addColumn()">
+    <mat-icon class="mat-18">add_circle</mat-icon>
+  </button>
+
+  <button mat-raised-button color="primary" (click)="removeColumn()">
+    <mat-icon class="mat-18">remove_circle</mat-icon>
+  </button>
+
+  <mat-form-field>
+    <input matInput [(ngModel)]="filter" (keyup)="aplicarFiltro(filter)">
+  </mat-form-field>
+</span>
+
+<table mat-table [dataSource]="filteredData" class="mat-elevation-z8">
+  <ng-container [matColumnDef]="col.field" *ngFor="let col of columns">
+    <th mat-header-cell *matHeaderCellDef>{{col.title | uppercase}}</th>
+    <!-- TODO - Adicionar ao planejamento da aula -->
+    <td mat-cell *matCellDef="let element">
+      <span [ngSwitch]="col.type">
+        <span *ngSwitchCase="'text'">
+          <mat-form-field>
+            <input matInput type="text" [(ngModel)]="element[col.field]">
+          </mat-form-field>
+        </span>
+
+        <span *ngSwitchCase="'number'">
+          <mat-form-field>
+            <input matInput type="number" [(ngModel)]="element[col.field]">
+          </mat-form-field>
+        </span>
+
+        <span *ngSwitchCase="'select'">
+          <mat-form-field>
+            <mat-select [(ngModel)]="col.value">
+              <mat-option
+              *ngFor="let item of col.resource"
+              [value]="item">
+              {{item}}
+            </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </span>
+      </span>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="getColumName()"></tr>
+  <tr mat-row *matRowDef="let row; columns: getColumName();"></tr>
+</table>
+
+</div>
